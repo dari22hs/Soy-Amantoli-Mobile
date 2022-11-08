@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_orders"
+        android:title="Pedidos"
+        android:icon="@drawable/ic_orders_v1" />
+    <item
+        android:id="@+id/menu_sales"
+        android:title="Ventas"
+        android:icon="@drawable/ic_menu_sales" />
+    <item
+        android:id="@+id/menu_reputation"
+        android:title="Reputación"
+        android:icon="@drawable/ic_menu_reputation"/>
+    <item
+        android:id="@+id/menu_stats"
+        android:title="Estadísitcas"
+        android:icon="@drawable/ic_menu_stats"/>
+    <item
+        android:id="@+id/menu_profile"
+        android:title="Perfil"
+        android:icon="@drawable/ic_profile" />
+
+
+</menu>

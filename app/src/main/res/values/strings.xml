@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Soy Amantoli</string>
+    <string name="new_product">Nuevo</string>
+    <string name="card_number">4152  3138  2274  1000</string>
+    <string name="card_holder_name">Titular de la tarjeta</string>
+    <string name="expiry_date">Fecha de vencimiento</string>
+    <string name="use_as_default_payment_method">Usar como método por defecto</string>
+    <string name="payment_methods">Métodos de pago</string>
+    <string name="add_new_card">Agregar nueva tarjeta</string>
+    <string name="add_card">Agregar</string>
+    <string name="empty_favourite">¡No hay favoritos agregados!</string>
+    <string name="add_to_bag">Agregar</string>
+    <string name="card_number_star">**** **** **** ****</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+</resources>
