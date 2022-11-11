@@ -6,18 +6,18 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.amantolivendedorv3.Fragment.GeneralReputationFragment
 import com.example.amantolivendedorv3.Fragment.ProductReputationFragment
-import com.example.amantolivendedorv3.Fragment.ReturnsFragment
-import com.example.amantolivendedorv3.Fragment.SalesFragment
+import com.example.amantolivendedorv3.Fragment.StatsGraphicsFragment
+import com.example.amantolivendedorv3.Fragment.StatsOverallFragment
 
-internal class ReputationAdapter (var context: Context, fm: FragmentManager, var totalTabs: Int): FragmentPagerAdapter(fm){
+internal class StatsAdapter (var context: Context, fm: FragmentManager, var totalTabs: Int): FragmentPagerAdapter(fm){
 
     override fun getItem(position: Int): Fragment {
         return when(position){
             0 -> {
-                GeneralReputationFragment()
+                StatsOverallFragment()
             }
             1 -> {
-                ProductReputationFragment()
+                StatsGraphicsFragment()
             }
             else -> getItem(position)
         }
@@ -26,5 +26,4 @@ internal class ReputationAdapter (var context: Context, fm: FragmentManager, var
     override fun getCount(): Int {
         return totalTabs
     }
-
 }

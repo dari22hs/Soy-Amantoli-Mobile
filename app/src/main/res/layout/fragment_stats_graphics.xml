@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Fragment.StatsGraphicsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <!--Change from AnyChart to Button to see the layout-->
+            <com.anychart.AnyChartView
+                android:id="@+id/pieChart"
+                android:layout_marginVertical="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="450dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:drawableStart="@drawable/ic_baseline_adjust_24"
+                android:gravity="center_vertical"
+                android:text="# = Número de vendedor"
+                android:fontFamily="@font/metropolis_light"
+                android:textSize="12sp"
+                android:textColor="@color/mainText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_baseline_adjust_24"
+                android:gravity="center_vertical"
+                android:text=" La gráfica se actualiza una vez el pago ha sido reflejado en la cuenta del vendedor"
+                android:fontFamily="@font/metropolis_light"
+                android:textSize="12sp"
+                android:textColor="@color/mainText"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#874FEA"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp" />
+
+            <!--Change from AnyChart to Button to see the layout-->
+                <com.anychart.AnyChartView
+                    android:id="@+id/barChart"
+                    android:layout_marginVertical="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_baseline_adjust_24"
+                android:gravity="center_vertical"
+                android:text=" La gráfica se actualiza una vez el pago ha sido reflejado en la cuenta del vendedor"
+                android:fontFamily="@font/metropolis_light"
+                android:textSize="12sp"
+                android:textColor="@color/mainText"/>
+
+            <!--Change from AnyChart to Button to see the layout-->
+            <com.anychart.AnyChartView
+                android:id="@+id/columnChart"
+                android:layout_marginVertical="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="450dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_baseline_adjust_24"
+                android:gravity="center_vertical"
+                android:text=" Cantidad de visitas de usuarios"
+                android:fontFamily="@font/metropolis_light"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/mainText"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

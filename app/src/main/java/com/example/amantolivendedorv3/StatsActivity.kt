@@ -5,10 +5,16 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.viewpager.widget.ViewPager
+import com.example.amantolivendedorv3.Adapter.SalesAdapter
+import com.example.amantolivendedorv3.Adapter.StatsAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.tabs.TabLayout
 
 class StatsActivity : AppCompatActivity() {
 
+    private lateinit var tabLayoutStats: TabLayout
+    private lateinit var viewPagerStats: ViewPager
     private lateinit var nav: BottomNavigationView
 
     @SuppressLint("MissingInflatedId")
@@ -45,6 +51,29 @@ class StatsActivity : AppCompatActivity() {
                 else -> false
             }
         }
+
+        tabLayoutStats = findViewById(R.id.tabLayoutStats)
+        viewPagerStats = findViewById(R.id.viewPagerStats)
+
+        tabLayoutStats.addTab(tabLayoutStats.newTab().setText("GENERAL"))
+        tabLayoutStats.addTab(tabLayoutStats.newTab().setText("GRÁFICAS"))
+        tabLayoutStats.tabGravity = TabLayout.GRAVITY_FILL
+
+        val adapterSubs = StatsAdapter(this, supportFragmentManager, tabLayoutStats.tabCount)
+        viewPagerStats.adapter = adapterSubs
+
+        viewPagerStats.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayoutStats))
+
+        tabLayoutStats.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+                viewPagerStats.currentItem = tab!!.position
+            }
+
+            override fun onTabUnselected(tab: TabLayout.Tab?) {}
+
+            override fun onTabReselected(tab: TabLayout.Tab?) {}
+
+        })
 
     }//End onCreate
 

@@ -25,15 +25,13 @@
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/navBottomMenuProfile"
+        android:id="@+id/navBottomMenu"
         app:menu="@menu/botom_nav_menu"
-        android:elevation="5dp"
-        app:elevation="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/menu_bg"
-        app:itemTextColor="@drawable/menu_selected"
-        app:itemIconTint="@drawable/menu_selected"
+        android:elevation="5dp"
+        app:elevation="5dp"
         android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

@@ -7,10 +7,37 @@
     android:background="@color/background"
     tools:context=".StatsActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ESTADÍSTICAS"/>
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/mainText"
+            android:fontFamily="@font/metropolis_regular"
+            android:text="ESTADÍSTICAS"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundAd"
+        android:layout_marginTop="50dp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="55dp"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navBottomMenu"
@@ -20,8 +47,6 @@
         android:background="@drawable/menu_bg"
         android:elevation="5dp"
         app:elevation="5dp"
-        app:itemTextColor="@drawable/menu_selected"
-        app:itemIconTint="@drawable/menu_selected"
         android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>
