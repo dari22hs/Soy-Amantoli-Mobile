@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlProfileActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
@@ -13,6 +14,7 @@
         android:orientation="horizontal"
         android:layout_gravity="center"
         android:gravity="center"
+        android:background="@color/background"
         android:layout_marginTop="10dp">
 
         <TextView
@@ -21,6 +23,185 @@
             android:textSize="20sp"
             android:fontFamily="@font/metropolis_regular"
             android:text="MI PERFIL"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_profile"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/metropolis_regular"
+                    android:text="Miguel Ángel Barbosa Vela"
+                    android:textColor="@color/mainText"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/metropolis_light"
+                    android:text="Vendedor #103"
+                    android:textColor="@color/mainText"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/metropolis_light"
+                    android:text="Taller TonaYork"
+                    android:textColor="@color/mainText"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--LinearLayout Mailbox-->
+        <LinearLayout
+            android:id="@+id/llMailboxAmantoli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buzón Amantoli"
+                    android:textSize="16sp"
+                    android:textColor="@color/mainText"
+                    android:fontFamily="@font/metropolis_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correos y notificaciones"
+                    android:textSize="16sp"
+                    android:textColor="@color/textAd"
+                    android:fontFamily="@font/metropolis_light"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivOpenMailbox"
+                android:layout_width="22dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+        </LinearLayout>
+
+        <!--LinearLayout Mailbox-->
+        <LinearLayout
+            android:id="@+id/llSubscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amantoli Pro"
+                    android:textSize="16sp"
+                    android:textColor="@color/mainText"
+                    android:fontFamily="@font/metropolis_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estatus de suscripción y beneficios"
+                    android:textSize="16sp"
+                    android:textColor="@color/textAd"
+                    android:fontFamily="@font/metropolis_light"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+        </LinearLayout>
+
+        <!--LinearLayout Configuración-->
+        <LinearLayout
+            android:id="@+id/llConfigAmantoli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Configuración"
+                    android:textSize="16sp"
+                    android:textColor="@color/mainText"
+                    android:fontFamily="@font/metropolis_regular"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contraseña, idioma, modo de aplicación y más"
+                    android:textSize="16sp"
+                    android:textColor="@color/textAd"
+                    android:fontFamily="@font/metropolis_light"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivOpenConfig"
+                android:layout_width="22dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
