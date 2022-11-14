@@ -24,7 +24,7 @@ class StatsGraphicsFragment : Fragment() {
     private var chart2: AnyChartView? = null
     private var chart3: AnyChartView? = null
 
-    private val salary = listOf(10900,11590,12400,16350)
+    private val salary = listOf(26980,11590,12400,16350)
     private val month = listOf("#103","#99","#97","#88")
 
     private val products = listOf("Las Tres Torrecitas", "Alebrije Shisho", "Alebrije Dragato", "Las Tres Torres", "Mini y Nos")
@@ -40,7 +40,6 @@ class StatsGraphicsFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_stats_graphics, container, false)
-
 
         chart = view.findViewById(R.id.pieChart)
         chart2 = view.findViewById(R.id.barChart)
@@ -67,8 +66,8 @@ class StatsGraphicsFragment : Fragment() {
         }//End for
 
         column!!.data(dataColumnChart)
+        column.animation(true, 2000)
         column.title("Categorías más visitadas")
-        column.animation(true)
         chart3!!.setChart(column)
 
     }//End fun configTopVisitedCategories
@@ -83,9 +82,17 @@ class StatsGraphicsFragment : Fragment() {
         }//End for
 
         bar!!.data(dataBarChart)
+        bar.normal().fill("#000000", 0.3)
+        bar.hovered().hatchFill("forward-diagonal", "#0066CC", 1, 15)
+        bar.selected().hatchFill("forward-diagonal", "#0066CC", 1, 15)
+        bar.animation(true, 2000)
         bar.title("Productos más vendidos")
-        bar.barGroupsPadding(0.1)
-        bar.animation(true)
+        bar.barGroupsPadding(0.2)
+        /*bar.normal().fill("#000000", 0.3)
+        bar.hovered().hatchFill("forward-diagonal", "#0066CC", 1, 15)
+        bar.selected().hatchFill("forward-diagonal", "#0066CC", 1, 15)*/
+        bar.pointWidth(25)
+
         chart2!!.setChart(bar)
 
     }//End fun configTopSoldProducts
@@ -100,8 +107,8 @@ class StatsGraphicsFragment : Fragment() {
         }//End for
 
         pie.data(dataPieChart)
+        pie.animation(true, 2000)
         pie.title("Top vendedores del mes")
-        pie.animation("")
         pie.startAngle(45)
         pie.sort("asc")
         pie.background("#F9F9F9")

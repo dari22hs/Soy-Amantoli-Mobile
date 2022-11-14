@@ -168,11 +168,11 @@
 
                         </LinearLayout>
 
-                        <View
+                        <!--<View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:background="#874FEA"
-                            android:layout_marginTop="135dp" />
+                            android:layout_marginTop="135dp" />-->
 
 
                     </RelativeLayout>
@@ -223,7 +223,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Nombre: Miguel Ángel Barbosa Vela"
+                                android:text="Nombre: Karina Mendoza Aguilar"
                                 android:textSize="14sp"
                                 android:fontFamily="@font/metropolis_regular"
                                 android:textColor="@color/mainText" />
@@ -232,7 +232,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginVertical="10dp"
-                                android:text="Calificación: 4.5 de 5"
+                                android:text="Calificación: 4.9 de 5"
                                 android:textSize="14sp"
                                 android:fontFamily="@font/metropolis_regular"
                                 android:textColor="@color/mainText" />
@@ -240,7 +240,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Total de reseñas: 9"
+                                android:text="Total de reseñas: 6"
                                 android:textSize="14sp"
                                 android:fontFamily="@font/metropolis_regular"
                                 android:textColor="@color/mainText" />
@@ -249,19 +249,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
-                                android:text="Opinión general de los clientes: buen servicio, atención rápida, mucha variedad de productos."
+                                android:text="Opinión general de los clientes: excelente servicio, atiende rápido, productos de buena calidad."
                                 android:textSize="14sp"
                                 android:fontFamily="@font/metropolis_regular"
                                 android:textColor="@color/mainText" />
 
                         </LinearLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#874FEA"
-                            android:layout_marginTop="135dp" />
-
 
                     </RelativeLayout>
 
@@ -311,7 +304,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Nombre: Miguel Ángel Barbosa Vela"
+                                android:text="Nombre: Juan Tomás Galván Gómez"
                                 android:textSize="14sp"
                                 android:fontFamily="@font/metropolis_regular"
                                 android:textColor="@color/mainText" />
@@ -320,7 +313,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginVertical="10dp"
-                                android:text="Calificación: 4.5 de 5"
+                                android:text="Calificación: 4.8 de 5"
                                 android:textSize="14sp"
                                 android:fontFamily="@font/metropolis_regular"
                                 android:textColor="@color/mainText" />
@@ -328,7 +321,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Total de reseñas: 9"
+                                android:text="Total de reseñas: 2"
                                 android:textSize="14sp"
                                 android:fontFamily="@font/metropolis_regular"
                                 android:textColor="@color/mainText" />
@@ -337,19 +330,12 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
-                                android:text="Opinión general de los clientes: buen servicio, atención rápida, mucha variedad de productos."
+                                android:text="Opinión general de los clientes: contesta rápido los mensajes, amable, variedad de productos."
                                 android:textSize="14sp"
                                 android:fontFamily="@font/metropolis_regular"
                                 android:textColor="@color/mainText" />
 
                         </LinearLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#874FEA"
-                            android:layout_marginTop="135dp" />
-
 
                     </RelativeLayout>
 
@@ -357,10 +343,89 @@
 
             </androidx.cardview.widget.CardView>
 
+            <!--VENDEDOR #8-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewOrders4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:background="@drawable/bg_options"
+                android:backgroundTint="@color/background"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llCardViewRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_options"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvExpandOrders4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vendedor #88"
+                        android:fontFamily="@font/metropolis_semibold"
+                        android:textSize="18sp"
+                        android:textColor="@color/mainText"/>
+
+                    <RelativeLayout
+                        android:id="@+id/expandableLayoutOrders4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nombre: David Pérez Torres"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textColor="@color/mainText" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="10dp"
+                                android:text="Calificación: 4.4 de 5"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textColor="@color/mainText" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total de reseñas: 4"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textColor="@color/mainText" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Opinión general de los clientes: buen servicio, tarda en contestar, no tiene tanta variedad de productos."
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textColor="@color/mainText" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
 
     </ScrollView>
-
 
 </RelativeLayout>

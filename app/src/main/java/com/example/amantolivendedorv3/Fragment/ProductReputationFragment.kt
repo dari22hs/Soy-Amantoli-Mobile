@@ -23,7 +23,6 @@ class ProductReputationFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_product_reputation, container, false)
 
-
         //Producto 1
         var tvExpandOrd = view.findViewById<TextView>(R.id.tvExpandOrders)
         var expandableLayoutOrd = view.findViewById<RelativeLayout>(R.id.expandableLayoutOrders)

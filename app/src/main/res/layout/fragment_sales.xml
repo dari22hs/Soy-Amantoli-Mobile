@@ -19,10 +19,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Historial de ventas concretadas"
+                android:drawableStart="@drawable/ic_check"
+                android:text=" Mi historial de ventas concretadas: 7"
                 android:textColor="@color/mainText"
                 android:layout_marginStart="10dp"
                 android:layout_marginBottom="10dp"
+                android:gravity="center"
                 android:fontFamily="@font/metropolis_regular"/>
 
             <!--CARD VENTAS 1-->
@@ -33,7 +35,7 @@
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 android:background="@drawable/bg_options"
                 android:backgroundTint="@color/background"
-                android:layout_marginTop="0dp">
+                android:layout_marginTop="5dp">
 
                 <LinearLayout
                     android:id="@+id/llCardViewRow"
@@ -47,7 +49,7 @@
                         android:id="@+id/tvExpandOrders"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$1,700.00  -  22/11/2022"
+                        android:text="$5,050.00      22/11/2022"
                         android:fontFamily="@font/metropolis_semibold"
                         android:textSize="18sp"
                         android:textColor="@color/mainText"/>
@@ -92,7 +94,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Total del pedido: $1,950"
+                                android:text="Total del pedido: $5,050"
                                 android:layout_marginVertical="10dp"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
@@ -109,7 +111,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Mi ganancia: $1,564"
+                                android:text="Mi ganancia: $4,646"
                                 android:layout_marginVertical="10dp"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
@@ -141,7 +143,7 @@
                                 android:layout_height="75dp"
                                 android:layout_marginTop="2dp"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/cala_mar" />
+                                android:src="@drawable/logo_tona_york" />
 
                         </LinearLayout>
 
@@ -162,7 +164,242 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="DNVM8236"
+                                android:text="ZGA1468"
+                                android:textSize="14sp"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginStart="150dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Paquetería asignada:"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_light"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="FEDEX"
+                                android:layout_gravity="center"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginStart="300dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:src="@drawable/paq_fedex_logo_v2"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="205dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pedido entregado el: 22/11/2022"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Monto depositado a la cuenta 4910 5510 1550 0699 a través de PayPal, el día 22/11/2022."
+                                android:textColor="@color/mainText"
+                                android:textStyle="italic"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Beneficiario: Miguel Ángel Barbosa Vela"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Número de vendedor: 103"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewOrders2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:background="@drawable/bg_options"
+                android:backgroundTint="@color/background"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llCardViewRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_options"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvExpandOrders2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$960.00          21/11/2022"
+                        android:fontFamily="@font/metropolis_semibold"
+                        android:textSize="18sp"
+                        android:textColor="@color/mainText"/>
+
+                    <RelativeLayout
+                        android:id="@+id/expandableLayoutOrders2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Detalle de venta"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textColor="@color/mainText" />
+
+                        </LinearLayout>
+
+                        <!--TOTAL-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="30dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pedido 14-MV"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total del pedido: $960"
+                                android:layout_marginVertical="10dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Comisión por venta: 8%"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mi ganancia: $883.2"
+                                android:layout_marginVertical="10dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <!--EMPRESA - TALLER-->
+
+                        <LinearLayout
+                            android:layout_width="155dp"
+                            android:layout_height="102dp"
+                            android:layout_marginStart="210dp"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/metropolis_semibold"
+                                android:text="Taller TonaYork"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/logo_tona_york" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Clave de rastreo:"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_light"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="IKES1974"
                                 android:textSize="14sp"
                                 android:layout_gravity="center"
                                 android:textAlignment="center"
@@ -222,7 +459,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Pedido entregado el: 22/11/2022"
+                                android:text="Pedido entregado el: 21/11/2022"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"/>
 
@@ -230,7 +467,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="10dp"
-                                android:text="Monto depositado a la cuenta 4910 5510 1550 0699 a través de PayPal el día 22/11/2022"
+                                android:text="Monto depositado a la cuenta 4910 5510 1550 0699 a través de PayPal, el día 21/11/2022."
                                 android:textColor="@color/mainText"
                                 android:textStyle="italic"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -255,12 +492,1180 @@
 
                         </LinearLayout>
 
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#874FEA"
-                            android:layout_marginTop="320dp" />
+                    </RelativeLayout>
 
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewOrders3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:background="@drawable/bg_options"
+                android:backgroundTint="@color/background"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llCardViewRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_options"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvExpandOrders3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$3,850.00       20/11/2022"
+                        android:fontFamily="@font/metropolis_semibold"
+                        android:textSize="18sp"
+                        android:textColor="@color/mainText"/>
+
+                    <RelativeLayout
+                        android:id="@+id/expandableLayoutOrders3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Detalle de venta"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textColor="@color/mainText" />
+
+                        </LinearLayout>
+
+                        <!--TOTAL-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="30dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pedido 13-MU"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total del pedido: $3,850"
+                                android:layout_marginVertical="10dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Comisión por venta: 8%"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mi ganancia: $3,542"
+                                android:layout_marginVertical="10dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <!--EMPRESA - TALLER-->
+
+                        <LinearLayout
+                            android:layout_width="155dp"
+                            android:layout_height="102dp"
+                            android:layout_marginStart="210dp"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/metropolis_semibold"
+                                android:text="Taller TonaYork"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/logo_tona_york" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Clave de rastreo:"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_light"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="LOTG5411"
+                                android:textSize="14sp"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginStart="150dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Paquetería asignada:"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_light"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DHL"
+                                android:layout_gravity="center"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginStart="300dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:src="@drawable/paq_dhl_logo_v3"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="205dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pedido entregado el: 20/11/2022"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Monto depositado a la cuenta 4910 5510 1550 0699 a través de PayPal, el día 20/11/2022."
+                                android:textColor="@color/mainText"
+                                android:textStyle="italic"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Beneficiario: Miguel Ángel Barbosa Vela"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Número de vendedor: 103"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewOrders4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:background="@drawable/bg_options"
+                android:backgroundTint="@color/background"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llCardViewRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_options"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvExpandOrders4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$1,590.00        18/11/2022"
+                        android:fontFamily="@font/metropolis_semibold"
+                        android:textSize="18sp"
+                        android:textColor="@color/mainText"/>
+
+                    <RelativeLayout
+                        android:id="@+id/expandableLayoutOrders4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Detalle de venta"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textColor="@color/mainText" />
+
+                        </LinearLayout>
+
+                        <!--TOTAL-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="30dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pedido 13-MU"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total del pedido: $3,850"
+                                android:layout_marginVertical="10dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Comisión por venta: 8%"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mi ganancia: $3,542"
+                                android:layout_marginVertical="10dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <!--EMPRESA - TALLER-->
+
+                        <LinearLayout
+                            android:layout_width="155dp"
+                            android:layout_height="102dp"
+                            android:layout_marginStart="210dp"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/metropolis_semibold"
+                                android:text="Taller TonaYork"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/logo_tona_york" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Clave de rastreo:"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_light"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="LOTG5411"
+                                android:textSize="14sp"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginStart="150dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Paquetería asignada:"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_light"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DHL"
+                                android:layout_gravity="center"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginStart="300dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:src="@drawable/paq_dhl_logo_v3"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="205dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pedido entregado el: 20/11/2022"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Monto depositado a la cuenta 4910 5510 1550 0699 a través de PayPal, el día 20/11/2022."
+                                android:textColor="@color/mainText"
+                                android:textStyle="italic"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Beneficiario: Miguel Ángel Barbosa Vela"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Número de vendedor: 103"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewOrders5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:background="@drawable/bg_options"
+                android:backgroundTint="@color/background"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llCardViewRow5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_options"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvExpandOrders5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$12,470.00      16/11/2022"
+                        android:fontFamily="@font/metropolis_semibold"
+                        android:textSize="18sp"
+                        android:textColor="@color/mainText"/>
+
+                    <RelativeLayout
+                        android:id="@+id/expandableLayoutOrders5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Detalle de venta"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textColor="@color/mainText" />
+
+                        </LinearLayout>
+
+                        <!--TOTAL-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="30dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pedido 13-MU"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total del pedido: $3,850"
+                                android:layout_marginVertical="10dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Comisión por venta: 8%"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mi ganancia: $3,542"
+                                android:layout_marginVertical="10dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <!--EMPRESA - TALLER-->
+
+                        <LinearLayout
+                            android:layout_width="155dp"
+                            android:layout_height="102dp"
+                            android:layout_marginStart="210dp"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/metropolis_semibold"
+                                android:text="Taller TonaYork"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/logo_tona_york" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Clave de rastreo:"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_light"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="LOTG5411"
+                                android:textSize="14sp"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginStart="150dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Paquetería asignada:"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_light"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DHL"
+                                android:layout_gravity="center"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginStart="300dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:src="@drawable/paq_dhl_logo_v3"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="205dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pedido entregado el: 20/11/2022"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Monto depositado a la cuenta 4910 5510 1550 0699 a través de PayPal, el día 20/11/2022."
+                                android:textColor="@color/mainText"
+                                android:textStyle="italic"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Beneficiario: Miguel Ángel Barbosa Vela"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Número de vendedor: 103"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewOrders6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:background="@drawable/bg_options"
+                android:backgroundTint="@color/background"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llCardViewRow6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_options"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvExpandOrders6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$2,310.00        16/11/2022"
+                        android:fontFamily="@font/metropolis_semibold"
+                        android:textSize="18sp"
+                        android:textColor="@color/mainText"/>
+
+                    <RelativeLayout
+                        android:id="@+id/expandableLayoutOrders6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Detalle de venta"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textColor="@color/mainText" />
+
+                        </LinearLayout>
+
+                        <!--TOTAL-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="30dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pedido 13-MU"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total del pedido: $3,850"
+                                android:layout_marginVertical="10dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Comisión por venta: 8%"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mi ganancia: $3,542"
+                                android:layout_marginVertical="10dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <!--EMPRESA - TALLER-->
+
+                        <LinearLayout
+                            android:layout_width="155dp"
+                            android:layout_height="102dp"
+                            android:layout_marginStart="210dp"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/metropolis_semibold"
+                                android:text="Taller TonaYork"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/logo_tona_york" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Clave de rastreo:"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_light"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="LOTG5411"
+                                android:textSize="14sp"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginStart="150dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Paquetería asignada:"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_light"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DHL"
+                                android:layout_gravity="center"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginStart="300dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:src="@drawable/paq_dhl_logo_v3"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="205dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pedido entregado el: 20/11/2022"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Monto depositado a la cuenta 4910 5510 1550 0699 a través de PayPal, el día 20/11/2022."
+                                android:textColor="@color/mainText"
+                                android:textStyle="italic"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Beneficiario: Miguel Ángel Barbosa Vela"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Número de vendedor: 103"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewOrders7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:background="@drawable/bg_options"
+                android:backgroundTint="@color/background"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/llCardViewRow7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_options"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/tvExpandOrders7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$750.00          15/11/2022"
+                        android:fontFamily="@font/metropolis_semibold"
+                        android:textSize="18sp"
+                        android:textColor="@color/mainText"/>
+
+                    <RelativeLayout
+                        android:id="@+id/expandableLayoutOrders7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Detalle de venta"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:textColor="@color/mainText" />
+
+                        </LinearLayout>
+
+                        <!--TOTAL-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="30dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pedido 13-MU"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total del pedido: $3,850"
+                                android:layout_marginVertical="10dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Comisión por venta: 8%"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mi ganancia: $3,542"
+                                android:layout_marginVertical="10dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <!--EMPRESA - TALLER-->
+
+                        <LinearLayout
+                            android:layout_width="155dp"
+                            android:layout_height="102dp"
+                            android:layout_marginStart="210dp"
+                            android:layout_marginTop="30dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/metropolis_semibold"
+                                android:text="Taller TonaYork"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp" />
+
+                            <ImageView
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_marginTop="2dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/logo_tona_york" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Clave de rastreo:"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_light"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="LOTG5411"
+                                android:textSize="14sp"
+                                android:layout_gravity="center"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginStart="150dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Paquetería asignada:"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_light"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DHL"
+                                android:layout_gravity="center"
+                                android:textSize="14sp"
+                                android:textAlignment="center"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="150dp"
+                            android:layout_marginStart="300dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:src="@drawable/paq_dhl_logo_v3"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="205dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pedido entregado el: 20/11/2022"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Monto depositado a la cuenta 4910 5510 1550 0699 a través de PayPal, el día 20/11/2022."
+                                android:textColor="@color/mainText"
+                                android:textStyle="italic"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Beneficiario: Miguel Ángel Barbosa Vela"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Número de vendedor: 103"
+                                android:textColor="@color/mainText"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/metropolis_regular"/>
+
+                        </LinearLayout>
 
                     </RelativeLayout>
 

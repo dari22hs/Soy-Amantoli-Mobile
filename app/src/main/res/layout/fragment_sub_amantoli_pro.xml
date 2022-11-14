@@ -104,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 android:layout_marginStart="10dp"
-                android:text=" Mis productos en 3D (7/10)"
+                android:text=" Mis productos en 3D (6/10)"
                 android:drawableStart="@drawable/ic_3d_sub_fragment"
                 android:textColor="@color/mainText"
                 android:textSize="16sp"

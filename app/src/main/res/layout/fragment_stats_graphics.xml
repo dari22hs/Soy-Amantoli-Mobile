@@ -70,7 +70,7 @@
                 android:layout_marginTop="5dp"
                 android:drawableStart="@drawable/ic_baseline_adjust_24"
                 android:gravity="center_vertical"
-                android:text=" La gráfica se actualiza una vez el pago ha sido reflejado en la cuenta del vendedor"
+                android:text=" Lo más vendido de TonaYork"
                 android:fontFamily="@font/metropolis_light"
                 android:textSize="12sp"
                 android:textColor="@color/mainText"/>

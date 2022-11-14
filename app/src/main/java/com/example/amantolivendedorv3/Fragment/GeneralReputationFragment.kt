@@ -60,7 +60,7 @@ class GeneralReputationFragment : Fragment() {
         }
         //Vendedor #99
 
-        //Vendedor #99
+        //Vendedor #97
         var tvExpandOrd3 = view.findViewById<TextView>(R.id.tvExpandOrders3)
         var expandableLayoutOrd3 = view.findViewById<RelativeLayout>(R.id.expandableLayoutOrders3)
         var cvOrd3 = view.findViewById<CardView>(R.id.cardViewOrders3)
@@ -77,6 +77,24 @@ class GeneralReputationFragment : Fragment() {
             }//Fin else
         }
         //Vendedor #97
+
+        //Vendedor #88
+        var tvExpandOrd4 = view.findViewById<TextView>(R.id.tvExpandOrders4)
+        var expandableLayoutOrd4 = view.findViewById<RelativeLayout>(R.id.expandableLayoutOrders4)
+        var cvOrd4 = view.findViewById<CardView>(R.id.cardViewOrders4)
+
+        tvExpandOrd4.setOnClickListener {
+            if(expandableLayoutOrd4.visibility == View.VISIBLE){
+                TransitionManager.beginDelayedTransition(cvOrd4, AutoTransition())
+                expandableLayoutOrd4.visibility = View.GONE
+                tvExpandOrd4.text = "Vendedor #88"
+            }else{
+                TransitionManager.beginDelayedTransition(cvOrd4, AutoTransition())
+                expandableLayoutOrd4.visibility = View.VISIBLE
+                tvExpandOrd4.text = "Ocultar"
+            }//Fin else
+        }
+        //Vendedor #88
 
         return view
     }//End View

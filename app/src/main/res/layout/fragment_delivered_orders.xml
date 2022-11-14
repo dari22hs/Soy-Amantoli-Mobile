@@ -20,10 +20,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Total de pedidos entregados: 7"
+                android:text=" Total de pedidos entregados: 7"
                 android:textColor="@color/mainText"
                 android:layout_marginStart="10dp"
                 android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/ic_list_bulleted"
+                android:gravity="center"
                 android:fontFamily="@font/metropolis_regular"/>
 
             <TextView
@@ -123,7 +125,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Pedido #16-MX"
+                                android:text="Pedido #15-MW"
                                 android:fontFamily="@font/metropolis_regular"
                                 android:textColor="@color/mainText" />
 
@@ -183,14 +185,14 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/alfa_renacer"/>
+                                android:src="@drawable/alfa_tres_torrecitas"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textAllCaps="false"
                                 android:layout_gravity="center"
                                 android:layout_marginStart="5dp"
-                                android:text="El Renacer"
+                                android:text="Las Tres Torrecitas"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp"
                                 android:fontFamily="@font/metropolis_regular"
@@ -200,7 +202,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="88dp"
+                                android:layout_marginStart="38dp"
                                 android:text="1"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp"
@@ -210,11 +212,11 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="78dp"
+                                android:layout_marginStart="70dp"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"
-                                android:text="$690"/>
+                                android:text="$900"/>
 
                         </LinearLayout>
 
@@ -230,24 +232,23 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/juegos_set_trompos"/>
+                                android:src="@drawable/escul_quetza"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textAllCaps="false"
                                 android:layout_gravity="center"
                                 android:layout_marginStart="5dp"
-                                android:text="Set 6 Trompos"
+                                android:text="Quetzalcóatl"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp"
-                                android:fontFamily="@font/metropolis_regular"
-                                />
+                                android:fontFamily="@font/metropolis_regular" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="60dp"
+                                android:layout_marginStart="83dp"
                                 android:text="1"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp"
@@ -256,8 +257,8 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="76dp"
-                                android:text="$270"
+                                android:layout_marginStart="70dp"
+                                android:text="$3,500"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -276,14 +277,14 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/pint_la_gran_ola"/>
+                                android:src="@drawable/alfa_laberinto"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textAllCaps="false"
                                 android:layout_gravity="center"
                                 android:layout_marginStart="5dp"
-                                android:text="La Gran Ola"
+                                android:text="Los Laberintos"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular" />
@@ -292,7 +293,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="82dp"
+                                android:layout_marginStart="70dp"
                                 android:text="1"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
@@ -301,8 +302,8 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="77dp"
-                                android:text="$990"
+                                android:layout_marginStart="70dp"
+                                android:text="$650"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -339,7 +340,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="175dp"
-                                android:text="Total del pedido: $1,950"
+                                android:text="Total del pedido: $5,050"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -363,7 +364,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="DNVM8236"
+                                android:text="ZGA1468"
                                 android:textSize="14sp"
                                 android:layout_gravity="center"
                                 android:textAlignment="center"
@@ -391,7 +392,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="DHL"
+                                android:text="FEDEX"
                                 android:layout_gravity="center"
                                 android:textSize="14sp"
                                 android:textAlignment="center"
@@ -410,7 +411,7 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="50dp"
-                                android:src="@drawable/paq_dhl_logo_v3"/>
+                                android:src="@drawable/paq_fedex_logo_v2"/>
 
                         </LinearLayout>
 
@@ -435,13 +436,6 @@
                                 android:fontFamily="@font/metropolis_semibold"/>
 
                         </LinearLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#874FEA"
-                            android:layout_marginTop="350dp" />
-
 
                     </RelativeLayout>
 
@@ -493,7 +487,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Pedido #16-MX"
+                                android:text="Pedido #14-MV"
                                 android:fontFamily="@font/metropolis_regular"
                                 android:textColor="@color/mainText" />
 
@@ -552,15 +546,15 @@
                             <ImageView
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/alfa_renacer"/>
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/alfa_jarron_multicapa"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textAllCaps="false"
                                 android:layout_gravity="center"
                                 android:layout_marginStart="5dp"
-                                android:text="El Renacer"
+                                android:text="Jarrón Multicapa"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp"
                                 android:fontFamily="@font/metropolis_regular"
@@ -570,7 +564,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="88dp"
+                                android:layout_marginStart="48dp"
                                 android:text="1"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp"
@@ -599,25 +593,24 @@
                             <ImageView
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/juegos_set_trompos"/>
+                                android:scaleType="fitXY"
+                                android:src="@drawable/alfa_familia_buho"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textAllCaps="false"
                                 android:layout_gravity="center"
                                 android:layout_marginStart="5dp"
-                                android:text="Set 6 Trompos"
+                                android:text="Familia Búho"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp"
-                                android:fontFamily="@font/metropolis_regular"
-                                />
+                                android:fontFamily="@font/metropolis_regular" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="60dp"
+                                android:layout_marginStart="75dp"
                                 android:text="1"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp"
@@ -634,57 +627,12 @@
 
                         </LinearLayout>
 
-                        <!--PRODUCT 3-->
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginTop="150dp"
-                            android:gravity="center_vertical">
-
-                            <ImageView
-                                android:layout_width="45dp"
-                                android:layout_height="45dp"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/pint_la_gran_ola"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textAllCaps="false"
-                                android:layout_gravity="center"
-                                android:layout_marginStart="5dp"
-                                android:text="La Gran Ola"
-                                android:textSize="14sp"
-                                android:textColor="@color/mainText"
-                                android:fontFamily="@font/metropolis_regular" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_marginStart="82dp"
-                                android:text="1"
-                                android:textSize="14sp"
-                                android:textColor="@color/mainText"
-                                android:fontFamily="@font/metropolis_regular" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="77dp"
-                                android:text="$990"
-                                android:textSize="14sp"
-                                android:textColor="@color/mainText"
-                                android:fontFamily="@font/metropolis_regular"/>
-
-                        </LinearLayout>
-
                         <!--RASTREAR - ENVÍO-->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="200dp"
+                            android:layout_marginTop="150dp"
                             android:gravity="center_vertical">
 
                             <TextView
@@ -703,13 +651,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="225dp">
+                            android:layout_marginTop="175dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="175dp"
-                                android:text="Total del pedido: $1,950"
+                                android:text="Total del pedido: $960"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -720,7 +668,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:layout_marginTop="250dp">
+                            android:layout_marginTop="200dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -733,7 +681,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="DNVM8236"
+                                android:text="IKES1974"
                                 android:textSize="14sp"
                                 android:layout_gravity="center"
                                 android:textAlignment="center"
@@ -746,7 +694,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:layout_marginTop="250dp"
+                            android:layout_marginTop="200dp"
                             android:layout_marginStart="150dp">
 
                             <TextView
@@ -774,7 +722,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:layout_marginTop="250dp"
+                            android:layout_marginTop="200dp"
                             android:layout_marginStart="300dp">
 
                             <ImageView
@@ -788,23 +736,23 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:layout_marginTop="305dp">
+                            android:layout_marginTop="255dp">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Entrega estimada: 26/11/2022"
+                                android:text="Entregado el: 21/11/2022"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Recibió: Melissa Pilco"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_semibold"/>
 
                         </LinearLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#874FEA"
-                            android:layout_marginTop="330dp" />
-
 
                     </RelativeLayout>
 
@@ -856,7 +804,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Pedido #16-MX"
+                                android:text="Pedido #13-MU"
                                 android:fontFamily="@font/metropolis_regular"
                                 android:textColor="@color/mainText" />
 
@@ -916,24 +864,23 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/alfa_renacer"/>
+                                android:src="@drawable/escul_las_tres_torres"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textAllCaps="false"
                                 android:layout_gravity="center"
                                 android:layout_marginStart="5dp"
-                                android:text="El Renacer"
+                                android:text="Las Tres Torres"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp"
-                                android:fontFamily="@font/metropolis_regular"
-                                />
+                                android:fontFamily="@font/metropolis_regular" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="88dp"
+                                android:layout_marginStart="58dp"
                                 android:text="1"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp"
@@ -943,11 +890,11 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="78dp"
+                                android:layout_marginStart="77dp"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"
-                                android:text="$690"/>
+                                android:text="$2,900"/>
 
                         </LinearLayout>
 
@@ -962,25 +909,25 @@
                             <ImageView
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/juegos_set_trompos"/>
+                                android:scaleType="fitXY"
+                                android:src="@drawable/alfa_tierra_en_fuego"/>
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textAllCaps="false"
                                 android:layout_gravity="center"
                                 android:layout_marginStart="5dp"
-                                android:text="Set 6 Trompos"
+                                android:text="Tierra en Llamas"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp"
-                                android:fontFamily="@font/metropolis_regular"
-                                />
+                                android:fontFamily="@font/metropolis_regular" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="60dp"
+                                android:layout_marginStart="52dp"
                                 android:text="1"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp"
@@ -990,7 +937,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="76dp"
-                                android:text="$270"
+                                android:text="$770"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -1009,14 +956,14 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/pint_la_gran_ola"/>
+                                android:src="@drawable/alfa_par_tazas"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textAllCaps="false"
                                 android:layout_gravity="center"
                                 android:layout_marginStart="5dp"
-                                android:text="La Gran Ola"
+                                android:text="Sol y Luna"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular" />
@@ -1025,7 +972,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:layout_marginStart="82dp"
+                                android:layout_marginStart="95dp"
                                 android:text="1"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
@@ -1035,7 +982,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="77dp"
-                                android:text="$990"
+                                android:text="$180"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -1072,7 +1019,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="175dp"
-                                android:text="Total del pedido: $1,950"
+                                android:text="Total del pedido: $3,850"
                                 android:textSize="14sp"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_regular"/>
@@ -1096,7 +1043,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="DNVM8236"
+                                android:text="LOTG5411"
                                 android:textSize="14sp"
                                 android:layout_gravity="center"
                                 android:textAlignment="center"
@@ -1156,18 +1103,18 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Entrega estimada: 26/11/2022"
+                                android:text="Entregado el: 20/11/2022"
+                                android:textColor="@color/mainText"
+                                android:fontFamily="@font/metropolis_semibold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Recibió: Alejandro Marín"
                                 android:textColor="@color/mainText"
                                 android:fontFamily="@font/metropolis_semibold"/>
 
                         </LinearLayout>
-
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="1dp"
-                            android:background="#874FEA"
-                            android:layout_marginTop="330dp" />
-
 
                     </RelativeLayout>
 

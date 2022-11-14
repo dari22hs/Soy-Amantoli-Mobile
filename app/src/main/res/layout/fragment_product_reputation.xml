@@ -9,12 +9,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/background">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
+            android:background="@color/background"
             android:orientation="vertical">
 
             <!--<LinearLayout
@@ -127,7 +129,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="4.7 de 5"
+                                android:text="4.6 de 5"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -137,7 +139,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:numStars="5"
-                                android:rating="4.7"
+                                android:rating="4.6"
                                 android:scaleX="0.5"
                                 android:scaleY="0.5"
                                 android:stepSize="0.1"
@@ -149,7 +151,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_toStartOf="@+id/productRating_singleProduct"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="6 reseñas"
+                                android:text="3 reseñas"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -212,7 +214,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:numStars="5"
-                                        android:rating="5"
+                                        android:rating="4.8"
                                         android:scaleX="0.5"
                                         android:scaleY="0.5"
                                         android:stepSize="0.1"
@@ -246,7 +248,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Francisco Hernández"
+                                        android:text="Martha Correa"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_light"/>
@@ -254,7 +256,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Muy originales"
+                                        android:text="Buen diseño"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_regular"/>
@@ -265,7 +267,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:numStars="5"
-                                        android:rating="5"
+                                        android:rating="4.5"
                                         android:scaleX="0.5"
                                         android:scaleY="0.5"
                                         android:stepSize="0.1"
@@ -280,7 +282,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="Las dos piezas son muy originales y están muy bien\ndiseñadas, pesan mucho, con eso se puede dar\nuna idea de la calidad con la que están hechos."
+                                            android:text="Tienen un diseño único y están muy bien\nconstruidos. Se ven muy bien en la entrada\nde mi casa."
                                             android:textColor="@color/mainText"
                                             android:textSize="14sp"
                                             android:fontFamily="@font/metropolis_light"/>
@@ -299,7 +301,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Francisco Hernández"
+                                        android:text="Angélica Mares"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_light"/>
@@ -307,7 +309,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Muy originales"
+                                        android:text="Elegancia"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_regular"/>
@@ -333,166 +335,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="Las dos piezas son muy originales y están muy bien\ndiseñadas, pesan mucho, con eso se puede dar\nuna idea de la calidad con la que están hechos."
-                                            android:textColor="@color/mainText"
-                                            android:textSize="14sp"
-                                            android:fontFamily="@font/metropolis_light"/>
-
-                                    </LinearLayout>
-
-                                </LinearLayout>
-
-                                <!--REVIEW 4-->
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="50dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Francisco Hernández"
-                                        android:textColor="@color/mainText"
-                                        android:textSize="14sp"
-                                        android:fontFamily="@font/metropolis_light"/>
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Muy originales"
-                                        android:textColor="@color/mainText"
-                                        android:textSize="14sp"
-                                        android:fontFamily="@font/metropolis_regular"/>
-
-                                    <RatingBar
-                                        style="@style/Widget.AppCompat.RatingBar.Indicator"
-                                        android:progressTint="#E3C507"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:numStars="5"
-                                        android:rating="5"
-                                        android:scaleX="0.5"
-                                        android:scaleY="0.5"
-                                        android:stepSize="0.1"
-                                        android:transformPivotX="0dp"
-                                        android:transformPivotY="15dp" />
-
-                                    <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Las dos piezas son muy originales y están muy bien\ndiseñadas, pesan mucho, con eso se puede dar\nuna idea de la calidad con la que están hechos."
-                                            android:textColor="@color/mainText"
-                                            android:textSize="14sp"
-                                            android:fontFamily="@font/metropolis_light"/>
-
-                                    </LinearLayout>
-
-                                </LinearLayout>
-
-                                <!--REVIEW 5-->
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="50dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Francisco Hernández"
-                                        android:textColor="@color/mainText"
-                                        android:textSize="14sp"
-                                        android:fontFamily="@font/metropolis_light"/>
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Muy originales"
-                                        android:textColor="@color/mainText"
-                                        android:textSize="14sp"
-                                        android:fontFamily="@font/metropolis_regular"/>
-
-                                    <RatingBar
-                                        style="@style/Widget.AppCompat.RatingBar.Indicator"
-                                        android:progressTint="#E3C507"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:numStars="5"
-                                        android:rating="5"
-                                        android:scaleX="0.5"
-                                        android:scaleY="0.5"
-                                        android:stepSize="0.1"
-                                        android:transformPivotX="0dp"
-                                        android:transformPivotY="15dp" />
-
-                                    <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Las dos piezas son muy originales y están muy bien\ndiseñadas, pesan mucho, con eso se puede dar\nuna idea de la calidad con la que están hechos."
-                                            android:textColor="@color/mainText"
-                                            android:textSize="14sp"
-                                            android:fontFamily="@font/metropolis_light"/>
-
-                                    </LinearLayout>
-
-                                </LinearLayout>
-
-                                <!--REVIEW 6-->
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="50dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Francisco Hernández"
-                                        android:textColor="@color/mainText"
-                                        android:textSize="14sp"
-                                        android:fontFamily="@font/metropolis_light"/>
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Muy originales"
-                                        android:textColor="@color/mainText"
-                                        android:textSize="14sp"
-                                        android:fontFamily="@font/metropolis_regular"/>
-
-                                    <RatingBar
-                                        style="@style/Widget.AppCompat.RatingBar.Indicator"
-                                        android:progressTint="#E3C507"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:numStars="5"
-                                        android:rating="5"
-                                        android:scaleX="0.5"
-                                        android:scaleY="0.5"
-                                        android:stepSize="0.1"
-                                        android:transformPivotX="0dp"
-                                        android:transformPivotY="15dp" />
-
-                                    <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Las dos piezas son muy originales y están muy bien\ndiseñadas, pesan mucho, con eso se puede dar\nuna idea de la calidad con la que están hechos."
+                                            android:text="Le dan un toque muy elegante a mi negocio. Los\nrecomiendo mucho, tiene detalles muy llamativos\npara la gente."
                                             android:textColor="@color/mainText"
                                             android:textSize="14sp"
                                             android:fontFamily="@font/metropolis_light"/>
@@ -537,7 +380,7 @@
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/alfa_siameses"
+                            android:src="@drawable/escul_las_tres_torres"
                             android:layout_gravity="center"
                             android:scaleType="fitXY"/>
 
@@ -551,7 +394,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_regular"
-                                android:text="Siameses"
+                                android:text="Las Tres Torres"
                                 android:textColor="@color/mainText"
                                 android:textSize="16sp" />
 
@@ -559,7 +402,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="4.7 de 5"
+                                android:text="4.9 de 5"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -569,7 +412,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:numStars="5"
-                                android:rating="4.7"
+                                android:rating="4.9"
                                 android:scaleX="0.5"
                                 android:scaleY="0.5"
                                 android:stepSize="0.1"
@@ -581,7 +424,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_toStartOf="@+id/productRating_singleProduct"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="6 reseñas"
+                                android:text="3 reseñas"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -624,7 +467,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Francisco Hernández"
+                                        android:text="Jorge Prado"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_light"/>
@@ -632,7 +475,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Muy originales"
+                                        android:text="Son enormes"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_regular"/>
@@ -644,7 +487,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:numStars="5"
-                                        android:rating="5"
+                                        android:rating="4.9"
                                         android:scaleX="0.5"
                                         android:scaleY="0.5"
                                         android:stepSize="0.1"
@@ -659,7 +502,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="Las dos piezas son muy originales y están muy bien\ndiseñadas, pesan mucho, con eso se puede dar\nuna idea de la calidad con la que están hechos."
+                                            android:text="La cantidad de detalles es impresionante,\la calidad vale\ntotalmente el precio. Los recomiendo al 100%."
                                             android:textColor="@color/mainText"
                                             android:textSize="14sp"
                                             android:fontFamily="@font/metropolis_light"/>
@@ -678,7 +521,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Francisco Hernández"
+                                        android:text="Hugo Díaz"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_light"/>
@@ -686,7 +529,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Muy originales"
+                                        android:text="De locos"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_regular"/>
@@ -712,7 +555,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="Las dos piezas son muy originales y están muy bien\ndiseñadas, pesan mucho, con eso se puede dar\nuna idea de la calidad con la que están hechos."
+                                            android:text="Son unas piezas sorprendentes. Adornan muy bien el\nrecibidor de mi casa y son de muy buena calidad."
                                             android:textColor="@color/mainText"
                                             android:textSize="14sp"
                                             android:fontFamily="@font/metropolis_light"/>
@@ -731,7 +574,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Francisco Hernández"
+                                        android:text="Luisa Cortés"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_light"/>
@@ -739,7 +582,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Muy originales"
+                                        android:text="Muy llamativos"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_regular"/>
@@ -750,7 +593,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:numStars="5"
-                                        android:rating="5"
+                                        android:rating="4.8"
                                         android:scaleX="0.5"
                                         android:scaleY="0.5"
                                         android:stepSize="0.1"
@@ -765,166 +608,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="Las dos piezas son muy originales y están muy bien\ndiseñadas, pesan mucho, con eso se puede dar\nuna idea de la calidad con la que están hechos."
-                                            android:textColor="@color/mainText"
-                                            android:textSize="14sp"
-                                            android:fontFamily="@font/metropolis_light"/>
-
-                                    </LinearLayout>
-
-                                </LinearLayout>
-
-                                <!--REVIEW 4-->
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="50dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Francisco Hernández"
-                                        android:textColor="@color/mainText"
-                                        android:textSize="14sp"
-                                        android:fontFamily="@font/metropolis_light"/>
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Muy originales"
-                                        android:textColor="@color/mainText"
-                                        android:textSize="14sp"
-                                        android:fontFamily="@font/metropolis_regular"/>
-
-                                    <RatingBar
-                                        style="@style/Widget.AppCompat.RatingBar.Indicator"
-                                        android:progressTint="#E3C507"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:numStars="5"
-                                        android:rating="5"
-                                        android:scaleX="0.5"
-                                        android:scaleY="0.5"
-                                        android:stepSize="0.1"
-                                        android:transformPivotX="0dp"
-                                        android:transformPivotY="15dp" />
-
-                                    <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Las dos piezas son muy originales y están muy bien\ndiseñadas, pesan mucho, con eso se puede dar\nuna idea de la calidad con la que están hechos."
-                                            android:textColor="@color/mainText"
-                                            android:textSize="14sp"
-                                            android:fontFamily="@font/metropolis_light"/>
-
-                                    </LinearLayout>
-
-                                </LinearLayout>
-
-                                <!--REVIEW 5-->
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="50dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Francisco Hernández"
-                                        android:textColor="@color/mainText"
-                                        android:textSize="14sp"
-                                        android:fontFamily="@font/metropolis_light"/>
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Muy originales"
-                                        android:textColor="@color/mainText"
-                                        android:textSize="14sp"
-                                        android:fontFamily="@font/metropolis_regular"/>
-
-                                    <RatingBar
-                                        style="@style/Widget.AppCompat.RatingBar.Indicator"
-                                        android:progressTint="#E3C507"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:numStars="5"
-                                        android:rating="5"
-                                        android:scaleX="0.5"
-                                        android:scaleY="0.5"
-                                        android:stepSize="0.1"
-                                        android:transformPivotX="0dp"
-                                        android:transformPivotY="15dp" />
-
-                                    <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Las dos piezas son muy originales y están muy bien\ndiseñadas, pesan mucho, con eso se puede dar\nuna idea de la calidad con la que están hechos."
-                                            android:textColor="@color/mainText"
-                                            android:textSize="14sp"
-                                            android:fontFamily="@font/metropolis_light"/>
-
-                                    </LinearLayout>
-
-                                </LinearLayout>
-
-                                <!--REVIEW 6-->
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginEnd="50dp"
-                                    android:orientation="vertical">
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Francisco Hernández"
-                                        android:textColor="@color/mainText"
-                                        android:textSize="14sp"
-                                        android:fontFamily="@font/metropolis_light"/>
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Muy originales"
-                                        android:textColor="@color/mainText"
-                                        android:textSize="14sp"
-                                        android:fontFamily="@font/metropolis_regular"/>
-
-                                    <RatingBar
-                                        style="@style/Widget.AppCompat.RatingBar.Indicator"
-                                        android:progressTint="#E3C507"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:numStars="5"
-                                        android:rating="5"
-                                        android:scaleX="0.5"
-                                        android:scaleY="0.5"
-                                        android:stepSize="0.1"
-                                        android:transformPivotX="0dp"
-                                        android:transformPivotY="15dp" />
-
-                                    <LinearLayout
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Las dos piezas son muy originales y están muy bien\ndiseñadas, pesan mucho, con eso se puede dar\nuna idea de la calidad con la que están hechos."
+                                            android:text="Atraen a muchos turistas que se toman fotos con estas\nesculturas. Me va mucho mejor en ventas solo porque\nla gente se acerca para apreciar las torres"
                                             android:textColor="@color/mainText"
                                             android:textSize="14sp"
                                             android:fontFamily="@font/metropolis_light"/>
@@ -969,7 +653,7 @@
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/alfa_siameses"
+                            android:src="@drawable/alfa_tres_torrecitas"
                             android:layout_gravity="center"
                             android:scaleType="fitXY"/>
 
@@ -983,7 +667,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_regular"
-                                android:text="Siameses"
+                                android:text="Las Tres Torrecitas"
                                 android:textColor="@color/mainText"
                                 android:textSize="16sp" />
 
@@ -991,7 +675,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="4.7 de 5"
+                                android:text="4.9 de 5"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -1000,7 +684,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:numStars="5"
-                                android:rating="4.7"
+                                android:rating="4.9"
                                 android:scaleX="0.5"
                                 android:scaleY="0.5"
                                 android:stepSize="0.1"
@@ -1012,7 +696,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_toStartOf="@+id/productRating_singleProduct"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="6 reseñas"
+                                android:text="7 reseñas"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -1055,7 +739,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Francisco Hernández"
+                                        android:text="Lupita García"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_light"/>
@@ -1063,7 +747,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Muy originales"
+                                        android:text="Muy prácticos"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_regular"/>
@@ -1089,7 +773,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="Las dos piezas son muy originales y están muy bien\ndiseñadas, pesan mucho, con eso se puede dar\nuna idea de la calidad con la que están hechos."
+                                            android:text="Son perfectos para el almacenamiento en la cocina,\ntienen muy buen espacio y vienen con una cuchara\nde muy buena calidad."
                                             android:textColor="@color/mainText"
                                             android:textSize="14sp"
                                             android:fontFamily="@font/metropolis_light"/>
@@ -1108,7 +792,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Francisco Hernández"
+                                        android:text="Olivia Fernández"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_light"/>
@@ -1116,7 +800,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Muy originales"
+                                        android:text="Perfectos"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_regular"/>
@@ -1142,7 +826,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="Las dos piezas son muy originales y están muy bien\ndiseñadas, pesan mucho, con eso se puede dar\nuna idea de la calidad con la que están hechos."
+                                            android:text="Se los compré a mi mamá de regalo y le encantaron.\nTienen un diseño muy bonito."
                                             android:textColor="@color/mainText"
                                             android:textSize="14sp"
                                             android:fontFamily="@font/metropolis_light"/>
@@ -1161,7 +845,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Francisco Hernández"
+                                        android:text="Víctor Romero"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_light"/>
@@ -1169,7 +853,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Muy originales"
+                                        android:text="Muy buenos"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_regular"/>
@@ -1180,7 +864,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:numStars="5"
-                                        android:rating="5"
+                                        android:rating="4.9"
                                         android:scaleX="0.5"
                                         android:scaleY="0.5"
                                         android:stepSize="0.1"
@@ -1195,7 +879,7 @@
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
-                                            android:text="Las dos piezas son muy originales y están muy bien\ndiseñadas, pesan mucho, con eso se puede dar\nuna idea de la calidad con la que están hechos."
+                                            android:text="Me parecen muy prácticos para la cocina.\nSolo me hubiera gustado que las cucharas fueran un\npoco más grandes. Aún así están muy bien."
                                             android:textColor="@color/mainText"
                                             android:textSize="14sp"
                                             android:fontFamily="@font/metropolis_light"/>
@@ -1214,7 +898,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Francisco Hernández"
+                                        android:text="Francisco Nuñez"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_light"/>
@@ -1222,7 +906,7 @@
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Muy originales"
+                                        android:text="Excelentes"
                                         android:textColor="@color/mainText"
                                         android:textSize="14sp"
                                         android:fontFamily="@font/metropolis_regular"/>
@@ -1399,7 +1083,7 @@
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/alfa_siameses"
+                            android:src="@drawable/alfa_familia_buho"
                             android:layout_gravity="center"
                             android:scaleType="fitXY"/>
 
@@ -1413,7 +1097,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_regular"
-                                android:text="Siameses"
+                                android:text="Familia Búho"
                                 android:textColor="@color/mainText"
                                 android:textSize="16sp" />
 
@@ -1421,7 +1105,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="4.7 de 5"
+                                android:text="4.4 de 5"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -1430,7 +1114,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:numStars="5"
-                                android:rating="4.7"
+                                android:rating="4.4"
                                 android:scaleX="0.5"
                                 android:scaleY="0.5"
                                 android:stepSize="0.1"
@@ -1442,7 +1126,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_toStartOf="@+id/productRating_singleProduct"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="6 reseñas"
+                                android:text="2 reseñas"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -1829,7 +1513,7 @@
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/alfa_siameses"
+                            android:src="@drawable/alfa_tierra_en_fuego"
                             android:layout_gravity="center"
                             android:scaleType="fitXY"/>
 
@@ -1843,7 +1527,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_regular"
-                                android:text="Siameses"
+                                android:text="Tierra en Llamas"
                                 android:textColor="@color/mainText"
                                 android:textSize="16sp" />
 
@@ -1851,7 +1535,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="4.7 de 5"
+                                android:text="4.8 de 5"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -1860,7 +1544,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:numStars="5"
-                                android:rating="4.7"
+                                android:rating="4.8"
                                 android:scaleX="0.5"
                                 android:scaleY="0.5"
                                 android:stepSize="0.1"
@@ -1872,7 +1556,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_toStartOf="@+id/productRating_singleProduct"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="6 reseñas"
+                                android:text="5 reseñas"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -2259,7 +1943,7 @@
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/alfa_siameses"
+                            android:src="@drawable/alfa_par_tazas"
                             android:layout_gravity="center"
                             android:scaleType="fitXY"/>
 
@@ -2273,7 +1957,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_regular"
-                                android:text="Siameses"
+                                android:text="Sol y Luna"
                                 android:textColor="@color/mainText"
                                 android:textSize="16sp" />
 
@@ -2281,7 +1965,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="4.7 de 5"
+                                android:text="4.8 de 5"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -2290,7 +1974,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:numStars="5"
-                                android:rating="4.7"
+                                android:rating="4.8"
                                 android:scaleX="0.5"
                                 android:scaleY="0.5"
                                 android:stepSize="0.1"
@@ -2302,7 +1986,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_toStartOf="@+id/productRating_singleProduct"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="6 reseñas"
+                                android:text="4 reseñas"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -2689,7 +2373,7 @@
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/alfa_siameses"
+                            android:src="@drawable/escul_quetza"
                             android:layout_gravity="center"
                             android:scaleType="fitXY"/>
 
@@ -2703,7 +2387,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_regular"
-                                android:text="Siameses"
+                                android:text="Quetzalcóatl"
                                 android:textColor="@color/mainText"
                                 android:textSize="16sp" />
 
@@ -2711,7 +2395,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="4.7 de 5"
+                                android:text="4.5 de 5"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -2720,7 +2404,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:numStars="5"
-                                android:rating="4.7"
+                                android:rating="4.5"
                                 android:scaleX="0.5"
                                 android:scaleY="0.5"
                                 android:stepSize="0.1"
@@ -3119,7 +2803,7 @@
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/alfa_siameses"
+                            android:src="@drawable/alfa_renacer"
                             android:layout_gravity="center"
                             android:scaleType="fitXY"/>
 
@@ -3133,7 +2817,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_regular"
-                                android:text="Siameses"
+                                android:text="El Renacer"
                                 android:textColor="@color/mainText"
                                 android:textSize="16sp" />
 
@@ -3141,7 +2825,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="4.7 de 5"
+                                android:text="4.8 de 5"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -3150,7 +2834,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:numStars="5"
-                                android:rating="4.7"
+                                android:rating="4.8"
                                 android:scaleX="0.5"
                                 android:scaleY="0.5"
                                 android:stepSize="0.1"
@@ -3162,7 +2846,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_toStartOf="@+id/productRating_singleProduct"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="6 reseñas"
+                                android:text="7 reseñas"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -3549,7 +3233,7 @@
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/alfa_siameses"
+                            android:src="@drawable/alfa_jarrita_colorida"
                             android:layout_gravity="center"
                             android:scaleType="fitXY"/>
 
@@ -3563,7 +3247,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_regular"
-                                android:text="Siameses"
+                                android:text="La Colorada"
                                 android:textColor="@color/mainText"
                                 android:textSize="16sp" />
 
@@ -3571,7 +3255,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="4.7 de 5"
+                                android:text="4.9 de 5"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -3580,7 +3264,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:numStars="5"
-                                android:rating="4.7"
+                                android:rating="4.9"
                                 android:scaleX="0.5"
                                 android:scaleY="0.5"
                                 android:stepSize="0.1"
@@ -3592,7 +3276,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_toStartOf="@+id/productRating_singleProduct"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="6 reseñas"
+                                android:text="2 reseñas"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -3979,7 +3663,7 @@
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/alfa_siameses"
+                            android:src="@drawable/alfa_flor_naranja"
                             android:layout_gravity="center"
                             android:scaleType="fitXY"/>
 
@@ -3993,7 +3677,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_regular"
-                                android:text="Siameses"
+                                android:text="Flor de Campo"
                                 android:textColor="@color/mainText"
                                 android:textSize="16sp" />
 
@@ -4001,7 +3685,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="4.7 de 5"
+                                android:text="4.5 de 5"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -4010,7 +3694,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:numStars="5"
-                                android:rating="4.7"
+                                android:rating="4.5"
                                 android:scaleX="0.5"
                                 android:scaleY="0.5"
                                 android:stepSize="0.1"
@@ -4022,7 +3706,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_toStartOf="@+id/productRating_singleProduct"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="6 reseñas"
+                                android:text="3 reseñas"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -4409,7 +4093,7 @@
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/alfa_siameses"
+                            android:src="@drawable/cala_mar"
                             android:layout_gravity="center"
                             android:scaleType="fitXY"/>
 
@@ -4423,7 +4107,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_regular"
-                                android:text="Siameses"
+                                android:text="Cala-Mar"
                                 android:textColor="@color/mainText"
                                 android:textSize="16sp" />
 
@@ -4431,7 +4115,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="4.7 de 5"
+                                android:text="4.9 de 5"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
@@ -4440,7 +4124,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:numStars="5"
-                                android:rating="4.7"
+                                android:rating="4.9"
                                 android:scaleX="0.5"
                                 android:scaleY="0.5"
                                 android:stepSize="0.1"
@@ -4839,7 +4523,7 @@
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/alfa_siameses"
+                            android:src="@drawable/alfa_set_platos"
                             android:layout_gravity="center"
                             android:scaleType="fitXY"/>
 
@@ -4853,7 +4537,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/metropolis_regular"
-                                android:text="Siameses"
+                                android:text="Set 8 Platos Clásicos"
                                 android:textColor="@color/mainText"
                                 android:textSize="16sp" />
 
@@ -4882,7 +4566,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_toStartOf="@+id/productRating_singleProduct"
                                 android:fontFamily="@font/metropolis_light"
-                                android:text="6 reseñas"
+                                android:text="9 reseñas"
                                 android:textColor="@color/mainText"
                                 android:textSize="14sp" />
 
