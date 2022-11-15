@@ -50,6 +50,8 @@ class MainActivity : AppCompatActivity() {
         })
 
         //nav.itemIconTintList = null;
+        nav.selectedItemId = R.id.menu_sales
+        nav.menu.getItem(0).setChecked(true)
 
         nav.setOnNavigationItemSelectedListener { item ->
             when(item.itemId){
@@ -81,5 +83,3 @@ class MainActivity : AppCompatActivity() {
     }//End onCreate
 
 }//Fin MainActivity
-
-//TODO("CHECK BOTTOM MENU NAV COLORS WHEN ITEM IS SELECTED")

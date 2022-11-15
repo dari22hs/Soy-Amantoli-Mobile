@@ -91,6 +91,8 @@ class ProfileActivity : AppCompatActivity() {
         }//End llLogout.setOnClickListener
 
         //nav.itemIconTintList
+        nav.selectedItemId = R.id.menu_sales
+        nav.menu.getItem(4).setChecked(true)
 
         nav.setOnNavigationItemSelectedListener { item ->
             when(item.itemId){
@@ -120,4 +122,3 @@ class ProfileActivity : AppCompatActivity() {
 
     }//End onCreate
 }//End class ProfileActivity
-//TODO("Add MailTo function in Mailbox fragment")

@@ -24,7 +24,9 @@ class StatsActivity : AppCompatActivity() {
 
         nav = findViewById(R.id.navBottomMenu)
 
-        nav.itemIconTintList = null;
+        //nav.itemIconTintList = null;
+        nav.selectedItemId = R.id.menu_sales
+        nav.menu.getItem(3).setChecked(true)
 
         nav.setOnNavigationItemSelectedListener { item ->
             when(item.itemId){

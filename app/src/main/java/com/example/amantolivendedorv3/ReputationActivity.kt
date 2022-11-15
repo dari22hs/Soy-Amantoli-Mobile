@@ -53,7 +53,9 @@ class ReputationActivity : AppCompatActivity() {
         })
 
         //Checar
-        nav.itemIconTintList
+        //nav.itemIconTintList
+        nav.selectedItemId = R.id.menu_sales
+        nav.menu.getItem(2).setChecked(true)
 
         nav.setOnNavigationItemSelectedListener { item ->
             when(item.itemId){

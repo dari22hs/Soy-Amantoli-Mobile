@@ -47,19 +47,20 @@ class SalesActivity : AppCompatActivity() {
 
         })
 
-
-
-
         //nav.itemIconTintList
+        nav.selectedItemId = R.id.menu_sales
+        nav.menu.getItem(1).setChecked(true)
 
         nav.setOnNavigationItemSelectedListener { item ->
             when(item.itemId){
                 R.id.menu_orders -> {
                     startActivity(Intent(this, MainActivity::class.java))
+                    //nav.itemIconTintList = null;
                     true
                 }
                 R.id.menu_sales -> {
                     Toast.makeText(this, "Ventas", Toast.LENGTH_SHORT).show()
+                    //nav.selectedItemId
                     true
                 }
                 R.id.menu_stats -> {
@@ -74,6 +75,7 @@ class SalesActivity : AppCompatActivity() {
                     startActivity(Intent(this, ProfileActivity::class.java))
                     true
                 }
+
                 else -> false
             }
         }
