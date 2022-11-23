@@ -159,6 +159,28 @@
             android:visibility="gone" />
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" Recordar correo electrónico"
+            android:gravity="center"
+            android:drawableStart="@drawable/ic_check_box_outline_blank"
+            android:textColor="@color/mainText"
+            android:fontFamily="@font/metropolis_light"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" Recordar contraseña"
+            android:gravity="center"
+            android:drawableStart="@drawable/ic_check_box_outline_blank"
+            android:textColor="@color/mainText"
+            android:fontFamily="@font/metropolis_light"
+            android:textSize="12sp"/>
+
+        <TextView
             android:id="@+id/forgottenPassTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -175,7 +197,7 @@
             android:id="@+id/loginBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/btn_bg_login2"
             android:elevation="10dp"
             android:fontFamily="@font/metropolis_bold"
