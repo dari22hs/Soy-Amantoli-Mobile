@@ -36,7 +36,7 @@
         android:layout_marginTop="60dp"
         android:fontFamily="@font/metropolis_semibold"
         android:gravity="center"
-        android:text="POR NEXTIA SOLUTIONS MX"
+        android:text="@string/por_nextia_solutions_mx"
         android:textColor="#8E22DB"
         android:textFontWeight="700"
         android:textSize="16sp"
